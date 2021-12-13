@@ -87,14 +87,14 @@ WSGI_APPLICATION = 'dxtrades.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-'''
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'd9u7ug5tf8ahns',
         'NAME': 'dxtrade',
-        'USER': 'postgres',
-        'PASSWORD': '1234',
-        'HOST': 'localhost',
+        'USER': 'eknsfzftkrdsry',
+        'PASSWORD': '0c67f8ea823e1e2250a5d1bef0f34963610addc01bbe82c8ad5045e0c6e2b6a7',
+        'HOST': 'ec2-3-230-219-251.compute-1.amazonaws.com',
         'PORT': '5432',
         'ATOMIC_REQUESTS': True
     }
@@ -102,14 +102,8 @@ DATABASES = {
 
 db_from_env = dj_database_url.config(conn_max_age=600)
 DATABASES['default'].update(db_from_env)
-'''
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
