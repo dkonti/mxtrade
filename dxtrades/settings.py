@@ -160,7 +160,7 @@ STATICFILES_DIRS = (
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp-gmail.outlook.com'
+EMAIL_HOST = 'smtp.office365.com'
 EMAIL_HOST_USER = 'mxtradeinvest@outlook.com'
 EMAIL_HOST_PASSWORD = 'wisdom3171'
 EMAIL_USE_TLS = True
