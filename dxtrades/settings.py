@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 import dj_database_url
+import django_heroku
 #from dotenv import load_dotenv
 #load_dotenv()
 
@@ -165,3 +166,5 @@ EMAIL_HOST_USER = 'mxtradeinvest@outlook.com'
 EMAIL_HOST_PASSWORD = 'wisdom3171'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
+
+django_heroku.settings(locals())
