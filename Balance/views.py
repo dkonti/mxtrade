@@ -31,7 +31,7 @@ def payment(request):
         current_user =request.user
         message = 'I want to make a payment of ' + str(amount) + ' btc from ' + str(current_user)
         
-        send_mail('BTC deposit', message, settings.EMAIL_HOST_USER, ['mxtradeinvest@outlook'], fail_silently=False)
+        send_mail('BTC deposit', message, settings.EMAIL_HOST_USER, ['mxtradeinvest@outlook.com'], fail_silently=False)
         
         return redirect('success')
         
@@ -45,7 +45,7 @@ def deposit(request):
         current_user =request.user
         message = 'I want to make a deposit of $' + str(amount) + ' from ' + str(current_user)
         
-        send_mail('Deposit', message, settings.EMAIL_HOST_USER, ['mxtradeinvest@outlook'], fail_silently=False)
+        send_mail('Deposit', message, settings.EMAIL_HOST_USER, ['mxtradeinvest@outlook.com'], fail_silently=False)
         
         return redirect('payment')
         
@@ -59,7 +59,7 @@ def withdraw(request):
         current_user =request.user
         message = 'I want to make a withdrawal of ' + str(amount) + ' BTC from ' + str(current_user) + 'to my wallet: ' + str(address)
         
-        send_mail('Deposit', message, settings.EMAIL_HOST_USER, ['mxtradeinvest@outlook'], fail_silently=False)
+        send_mail('Deposit', message, settings.EMAIL_HOST_USER, ['mxtradeinvest@outlook.com'], fail_silently=False)
         
         return redirect('success')
         
