@@ -1,0 +1,56 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% block content %}
+<div class="content-body">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-xl-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="media align-items-center mb-4 text-center">
+                                    <span class="fas fa-user" style="width:80px; height:80; font-size: 6em;"></span>
+                                    <div class="media-body">
+                                        <h3 class="mb-0">{{ user.first_name }} {{ user.last_name }}</h3>
+										<p class="text-muted mb-0">Account Type</p>
+                                        <p class="text-muted mb-0"><b>{{ user.account_type }}</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mb-5 ">
+                                    <div class="col">
+                                        <div class="card card-profile text-center">
+                                            <span class="mb-1 text-warning"><i class="fas fa-phone"></i></span>
+                                            <h3 class="mb-0">Phone Number</h3>
+                                            <p class="text-muted px-4">{{ user.phone_number }}</p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card card-profile text-center">
+                                            <span class="mb-1 text-warning"><i class="fas fa-envelope"></i></span>
+                                            <h3 class="mb-0">Email</h3>
+                                            <p class="text-muted">{{ user.email }}</p>
+                                        </div>
+                                    </div>
+									
+                                    <div class="col-12 text-center"><br>
+                                        <a  href="{% url 'wallet' %}"><button class="btn btn-warning px-5">Dashboard</button></a>
+                                    </div>
+                                </div>
+								<div class="row">
+                  
+
+                                <h4>About Me</h4>
+                                <ul class="card-profile__info">
+                                    <li class="mb-1"><strong class="text-dark mr-4">First Name</strong> <span>{{ user.first_name }}</span></li>
+                                    <li><strong class="text-dark mr-4">Last Name</strong> <span>{{ user.last_name }}</span></li>
+									<li><strong class="text-dark mr-4">Country</strong> <span>{{ user.country }}</span></li>
+                                </ul>
+                            </div>
+                        </div>  
+                    </div>
+				</div>
+			</div>
+	</div>
+					
+{% endblock %}

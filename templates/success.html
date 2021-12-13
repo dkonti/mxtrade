@@ -1,0 +1,60 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% block content %}
+
+
+        <!-- Section -->
+        <section class="vh-lg-100 d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-center form-bg-image" data-background-lg="{% static '/assets/img/illustrations/signin.svg' %}">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <div class="signin-inner my-3 my-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+                            
+							
+                            <form action="" method="POST" class="mt-4">
+							{% csrf_token %}
+                                <!-- Form -->
+								<div class="form-group mb-4">
+									<div class="col-12 col-sm-6 col-xl-12 mb-4">
+										<div class="card border-light shadow-sm">
+											<div class="card-body">
+												<div class="row d-block d-xl-flex align-items-center">
+													<div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">	
+														
+														<div class="icon icon-lg">
+															<span>
+																<i class="fas fa-check-circle text-success "></i>
+															</span>
+														</div>
+														<div class="d-sm-none">
+															<p class="text-success align-items-center">    Successful</p>
+														</div>
+													</div>                                       
+													<div class="col-12 col-xl-7 px-xl-0">
+														<div class="d-none d-sm-block">
+															<p class="text-success">Successful</p>
+															<h6 class="mb-2">Your transaction has been recieved and it's being processed.</h6>
+														</div>
+														<small> <span class="icon icon-small"><span class="fas fa-info-circle"></span></span> Transaction confirmation takes 2days.</small> 
+														<div class="small mt-2">                               
+															<span class="fas fa-check-square text-success"></span>                                   
+															<span class=" font-weight-bold">Trusted</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+                                <!-- End of Form -->
+                                    <!-- End of Form -->
+                                
+                            </form>
+						</div>
+					</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}

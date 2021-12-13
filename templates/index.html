@@ -1,0 +1,444 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<script>
+	//when the user clicks on <div>, open address
+	function myFunction() {
+		var popup = document.getElementById("myPopup");
+		popup.classList.toggle("show")
+	}
+</script>
+
+
+    <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top">
+      <video autoplay muted loop id="bg-video">
+          <source src="{% static 'assets/images/course-video.mp4' %}" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="caption">
+              <h6>Do You want to <span style="color:orange;">Grow</span> Your <span style="color:orange;">Business</span>?<h6>
+			  <p style="color:white;">Maximum Trade Invesments got You Covered!<p>
+              <h2><em>Join</em> MXTRADE</h2>
+              <div class="main-button">
+                  <div class=""><a href="{% url 'users:signup' %}">Register</a></div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+
+  <section class="features">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-lg-6 col-12">
+          <div class="features-post second-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-info"></i>About</h4>
+              </div>
+              <div class="content-hide">
+                <p>MxTrade is a cryptocurrency and forex trading platform payment. We have an experienced team of street smart forex traders to ensure 50% profit margin on all investments.</p>
+                <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet.</p>
+                <div class="scroll-to-section"><a href="#section1">Details</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+		<div class="col-lg-6 col-12">
+          <div class="features-post">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-connectdevelop"></i>Services</h4>
+              </div>
+              <div class="content-hide">
+                <p>At Mxtrade, we provide reliable data encryption of all data transferred through the site.</p>
+                <p class="hidden-sm">We provide a unique global perspective through our global network, in-depth market and sector knowledge, you are assured that your investment will yield with us because we diversify and we have multiple income streams which include but not limited to: Cryptocurrency trading, Binary options trading, CFD's, Forex, Stock & Commodities.</p>
+                <div class="scroll-to-section"><a href="#section2">More Info.</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  
+  
+    <section class="section video" data-section="section1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <div class="left-content">
+            <span>We are here for you!</span>
+            <h4>About <em>MxTrade</em></h4>
+            <p>Maximumx Trade Investment is a Professional Trading and Investment Company Emphasizing on Cryptocurrency, Forex Trading and Stock Market Stability. We are Trained Financials with Technical Knowledge. We actively Monitor the Forex Market, Binary Options, Rythms of Currencies.
+			
+			Maximum Trade Investment Popularly known as MxTrade Invest has been Increasingly Recognize around the Globe for her ideal Investing Trading System and Superb ROI's. Access Packages and get the best for you to get going.</a>
+            <br><br>The Vast Majority of Customer Deposits are Stored Offline in Air-Gapped Cold Storage.We only Keep Enough Online to Facilitate Active Trading, which Greatly Minimizes Risk and Exposure. Our Auditing Programs Monitor Every Activity 24/7/365. Service to the Community as a Priority in having Strong Roots and Believe in Customer Service and Transparency. We are Committed to Optimum Delivery and Uprightness. We let Our Service do the Talking. Any Funds You Put in Mxtrade are Only Used to Facilitate Trading through Your Account. Unlike the Bank we do not Operate on Fractional Reserve.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <article class="video-item">
+            <figure>
+              <a href="" class="play"><img src="{% static 'assets/images/main-thumb.jpg' %}"></a>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+	<section class="section video">
+		<div class="container">
+			<div style="height:560px; background-color: #1D2330; overflow:hidden; box-sizing: border-box; border: 1px solid #282E3B; border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #262B38;padding:1px;padding: 0px; margin: 0px; width: 100%;"><div style="height:540px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=859&pref_coin_id=1505" width="100%" height="536px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe></div><div style="color: #626B7F; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;"><a href="https://coinlib.io" target="_blank" style="font-weight: 500; color: #626B7F; text-decoration:none; font-size:11px">Cryptocurrency Prices</a>&nbsp;by Coinlib</div></div>
+		</div>
+	</section>
+
+  <section class="section why-us" data-section="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Services we provide</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id='tabs'>
+            <ul>
+              <li><a href='#tabs-1'>Investment</a></li>
+              <li><a href='#tabs-2'>Online Wallet</a></li>
+            </ul>
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{% static 'assets/images/choose-us-image-01.jpg' %}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Investment</h4>
+                    <p>We Provide Affordable Investment Plans that Yields up to 30% Return Monthly. Our Investment Plan is Really Flexible and Withdrawal is Supported at any Point in Time. The Foreign Exchange Market is a Global Decentralized or Over-the-Counter Market for the Trading of Currencies. This Market Determines Foreign Exchange Rates for Every Currency. It Includes all Aspects of Buying, Selling and Exchanging Currencies at Current or Determined Prices.</p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-2'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{% static 'assets/images/choose-us-image-02.jpg' %}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Online Wallet</h4>
+                    <p>We also provide a safe and reliable digital money wallet where our customers can conviniently save or store digital currency and make withdrawal at anytime.</p> 
+                    <p>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section video">
+		<div class="container">
+			<div style="height:433px; background-color: #1D2330; overflow:hidden; box-sizing: border-box; border: 1px solid #282E3B; border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #262B38; padding: 0px; margin: 0px; width: 100%;"><div style="height:413px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=dark&cnt=6&pref_coin_id=1505&graph=yes" width="100%" height="409px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe></div><div style="color: #626B7F; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;"><a href="https://coinlib.io" target="_blank" style="font-weight: 500; color: #626B7F; text-decoration:none; font-size:11px">Cryptocurrency Prices</a>&nbsp;by Coinlib</div></div>
+		</div>
+	</section>
+
+  <section class="section coming-soon" data-section="section3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-xs-12">
+          <div class="continer centerIt">
+            <div>
+              <h4>Invest <em>$1000</em> and win $326 within 3 days of registration.</h4>
+              <div class="counter">
+
+                <div class="days">
+                  <div class="value">00</div>
+                  <span>Days</span>
+                </div>
+
+                <div class="hours">
+                  <div class="value">00</div>
+                  <span>Hours</span>
+                </div>
+
+                <div class="minutes">
+                  <div class="value">00</div>
+                  <span>Minutes</span>
+                </div>
+
+                <div class="seconds">
+                  <div class="value">00</div>
+                  <span>Seconds</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="right-content">
+            <div class="top-content">
+              <h6>Register your free account and <em>get immediate</em> access to promos & bonuses</h6>
+            </div>
+            <form id="contact" action="" method="get">
+				{% csrf_token %}
+              <div class="row">
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Your Phone Number" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="button">Get it now</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+ <section class="section video" data-section="">
+		<div class="container">
+			<!-- TradingView Widget BEGIN -->
+			<div class="tradingview-widget-container">
+			  <div id="tradingview_b3847"></div>
+			  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Chart</span></a> by TradingView</div>
+			  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+			  <script type="text/javascript">
+			  new TradingView.widget(
+			  {
+			  "width": "100%",
+			  "height": 610,
+			  "symbol": "NASDAQ:AAPL",
+			  "interval": "D",
+			  "timezone": "Etc/UTC",
+			  "theme": "dark",
+			  "style": "1",
+			  "locale": "en",
+			  "toolbar_bg": "#f1f3f6",
+			  "enable_publishing": true,
+			  "withdateranges": true,
+			  "hide_side_toolbar": false,
+			  "allow_symbol_change": true,
+			  "watchlist": [
+				"COINBASE:BTCUSD",
+				"FX:EURUSD",
+				"NASDAQ:AAPL",
+				"FRED:SP500"
+			  ],
+			  "details": true,
+			  "hotlist": true,
+			  "calendar": true,
+			  "container_id": "tradingview_b3847"
+			}
+			  );
+			  </script>
+			</div>
+			<!-- TradingView Widget END -->
+		</div>
+	</section>
+
+  <section class="section courses">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-heading">
+					<h2>Choose Your Plan</h2>
+				</div>
+			</div>
+			<div class="owl-carousel">
+				<div class="item" >
+					<i class="fa fa-bitcoin icon-3" style="font-size: 6em; background-color: #cd7f32; border-radius: 50%; border: 10px outset #cd7f32; color: #fff; align-item: center;"></i>
+					<p style="font-size:1em; color: #fff"><b>Bronze Package</b></p>
+					<div class="down-content">
+						<h4>Bronze</h4>
+						<p>
+							Get 5% of deposit as a daily bonus for 15days.<br>Starts from: <span style="color:#cd7f32;"><b>$100</b></span>
+						</p>
+						<div class="author-image">
+							<i class="fa fa-bitcoin" style="background-color: #cd7f32; border-radius: 50%; border: 10px outset #cd7f32; color: #fff;"></i>
+						</div>
+						<div class="text-button-pay">
+							<a href="#">Subscribe <i class="fa fa-angle-double-right"></i></a>
+						</div>
+					</div>
+				</div>
+				
+			  <div class="item">
+			   <i class="fa fa-bitcoin icon-3" style="font-size: 6em; background-color: #c0c0c0; border-radius: 50%; border: 10px outset #c0c0c0; color: #fff; align-item: center;"></i>
+					<p style="font-size:1em; color: #fff"><b>Silver Package</b></p>
+				<div class="down-content">
+				  <h4>Silver</h4>
+				  <p>Get 10% of deposit as bonus in 2days.<br>Starts from: <span style="color:#c0c0c0;"><b>$500</b></span></p>
+				  <div class="author-image">
+					<i class="fa fa-bitcoin" style="background-color: #c0c0c0; border-radius: 50%; border: 10px outset #c0c0c0; color: #fff;"></i>
+				  </div>
+				  <div class="text-button-free">
+					<a href="#">Subscribe <i class="fa fa-angle-double-right"></i></a>
+				  </div>
+				</div>
+			  </div>
+			  
+			  <div class="item">
+				<i class="fa fa-bitcoin icon-3" style="font-size: 6em; background-color: #ffd700; border-radius: 50%; border: 10px outset #ffd700; color: #fff; align-item: center;"></i>
+					<p style="font-size:1em; color: #fff"><b>Gold Package</b></p>
+				<div class="down-content">
+				  <h4>Gold</h4>
+				  <p>Get 50% of deposit as bonus in 7days.<br>Starts from:<span style="color:#ffd700;"><b> $1000</b></span></p>
+				  <div class="author-image">
+					<i class="fa fa-bitcoin" style="background-color: #ffd700; border-radius: 50%; border: 10px outset #ffd700; color: #fff;"></i>
+				  </div>
+				  <div class="text-button-pay">
+					<a href="#">Subscribe <i class="fa fa-angle-double-right"></i></a>
+				  </div>
+				</div>
+			  </div>
+			  
+			<div class="item">
+				<i class="fa fa-bitcoin icon-3" style="font-size: 6em; background-color: #b9f2ff; border-radius: 50%; border: 10px outset #b9f2ff; color: #fff; align-item: center;"></i>
+				<p style="font-size:1em; color: #fff"><b>Diamond Package</b></p>
+				<div class="down-content">
+					<h4>Diamond</h4>
+					<p>Get 75% of deposit as bonus in 7days.<!-- and option for a 125% on 14days(+7days) countdown to a total of 200% in 14days.--><br>Starts from: <span style="color:#b9f2ff;"><b>$2500</b></span></p>
+					<div class="author-image">
+						<i class="fa fa-bitcoin" style="background-color: #b9f2ff; border-radius: 50%; border: 10px outset #b9f2ff; color: #fff;"></i>
+					</div>
+					<div class="text-button-free">
+						<a href="#">Subscribe <i class="fa fa-angle-double-right"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item">
+				<i class="fa fa-bitcoin icon-3" style="font-size: 6em; background-color: #50c878; border-radius: 50%; border: 10px outset #50c878; color: #fff; align-item: center;"></i>
+				<p style="font-size:1em; color: #fff"><b>Emerald Package</b></p>
+				<div class="down-content">
+					<h4>Emerald</h4>
+					<p>Get x5 of deposit as bonus from 4days of deposit.<br>Starts from:<span style="color:#50c878;"><b> $5000</span></p>
+					<div class="author-image">
+						<i class="fa fa-bitcoin" style="background-color: #50c878; border-radius: 50%; border: 10px outset #50c878; color: #fff;"></i>
+					</div>
+					<div class="text-button-pay">
+						<a href="#">Subscribe <i class="fa fa-angle-double-right"></i></a>
+					</div>
+				</div>
+			</div>
+			  
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="section video" data-section="section5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <div class="left-content">
+            <h4>We Are a Very <em>Trusted Brand</em></h4>
+            <p>If you had invested $10,000 in Forex Trading at the start of year, you would have had an approximate profit of $30,000 by August. Don't sleep on this. Forex is here to stay, and those who get in early, make the most profit. The right time is now.
+            <br><br>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p>
+            <div class="main-button"><a rel="nofollow" href="" target="_parent">Invest Now</a></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <article class="video-item">
+            <figure>
+              <a href="" class="play"><img src="{% static 'assets/images/main-thumb1.jpg' %}"></a>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+          <div class="popup right-content" onclick="MyFunction()">
+			<span class="popuptext" id="myPopup">
+            <h4>Special <em>Offer</em></h4>
+			<h6><em>Lifetime </em>Insurance</h6>
+            <p>Get 25% weekly for 6 months or 35% weekly for 1 year and make budgeting easier as you plan ahead.
+			
+			6 months plan starts with $11,000 and gets 9.1% welcome package bonus and another 9.1% bonus at withdrawal.
+			
+			1 year plan starts with $16,000 and will be getting 9.1% welcome package bonus and another 9.1% bonus at withdrawal. Bonuses can be withdrawn immediately after system confirms deposit, then package gets activated. Bonuses exclude actual payments.</p>
+            <div class="main-button"><a rel="nofollow" href="" target="_parent">Invest Now</a></div>
+			</span>
+          </div>
+		  
+		  
+
+
+
+  <section class="section contact" data-section="select">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Let’s Keep In Touch</h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+        
+        <!-- Do you need a working HTML contact-form script?
+                	
+                    Please visit https://templatemo.com/contact page -->
+                    
+          <form id="contact" action="" method="post">
+			{% csrf_token %}
+            <div class="row">
+              <div class="col-md-6">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-6">
+                  <fieldset>
+                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                  </fieldset>
+                </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="button">Send Message Now</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div id="map">
+            <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="422px" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+  </section>
+{% endblock %}
