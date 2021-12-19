@@ -41,13 +41,24 @@ def contact(request):
     return render(request, "contact.html")
 
     
-def investment(request):
-	#return HttpResponse("about")
-    return render(request, "investment.html")
+def subscribe(request):
+    if request.method == 'POST':
+        package = request.POST.get('package')
+        current_user =request.user
+        message = 'I want to Subscribe to' + package + ' from ' + str(current_user)
+        
+        send_mail('Subscribe', message, settings.EMAIL_HOST_USER, ['mxtradeinvest@outlook.com'], fail_silently=False)
+        
+        return redirect('success1')
+    return render(request, "subscribe.html")
     
 def success(request):
 	#return HttpResponse("about")
     return render(request, "success.html")
+    
+def success1(request):
+	#return HttpResponse("about")
+    return render(request, "success1.html")
 
 
        

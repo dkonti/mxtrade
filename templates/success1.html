@@ -1,0 +1,151 @@
+
+{% load static %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!-- Primary Meta Tags -->
+	<title>Maximum Trade Investments - Your financial solution</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="title" content="Maximum Trade Investments - Your financial solution">
+	<meta name="author" content="Natixis">
+	<meta name="description" content="Maximum Trade Investments - Mx trade invest is a professional trading and investment company emphasis on cryptocurrency, forex trading and stock market stability.">
+	<link rel="canonical" href="">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="Maximum Trade Investments - Your financial solution">
+	<meta property="og:description" content="Maximum Trade Investments - Mx trade invest is a professional trading and investment company emphasis on cryptocurrency, forex trading and stock market stability.">
+	<meta property="og:image" content="">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="">
+	<meta property="twitter:title" content="Maximum Trade Investments - Your financial solution">
+	<meta property="twitter:description" content="Maximum Trade Investments - Mx trade invest is a professional trading and investment company emphasis on cryptocurrency, forex trading and stock market stability.">
+	<meta property="twitter:image" content="">
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="120x120" href="{% static 'assets/images/favicon.ico' %}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/images/favicon.ico' %}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/images/favicon.ico' %}">
+	<link rel="manifest" href="{% static 'assets/images/favicon.ico' %}">
+	<link rel="mask-icon" href="{% static 'assets/images/favicon.ico' %}" color="#ffffff">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Fontawesome -->
+	<link type="text/css" href="{% static 'ffs/vendor/@fortawesome/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+
+	<!-- Notyf -->
+	<link type="text/css" href="{% static 'ffs/vendor/notyf/notyf.min.css' %}" rel="stylesheet">
+
+	<!-- Volt CSS -->
+	<link type="text/css" href="{% static 'ffs/css/volt.css' %}" rel="stylesheet">
+
+	<!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
+
+ </head>
+
+<body>
+
+        <!-- Section -->
+        <section class="vh-lg-100 d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-center form-bg-image" data-background-lg="{% static '/assets/img/illustrations/signin.svg' %}">
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <div class="signin-inner my-3 my-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+                            
+							
+                            <form action="" method="POST" class="mt-4">
+							{% csrf_token %}
+                                <!-- Form -->
+								<div class="form-group mb-4">
+									<div class="col-12 col-sm-6 col-xl-12 mb-4">
+										<div class="card border-light shadow-sm">
+											<div class="card-body">
+												<div class="row d-block d-xl-flex align-items-center">
+													<div class="col-12 col-xl-5 text-xl-center mb-3 mb-xl-0 d-flex align-items-center justify-content-xl-center">	
+														
+														<div class="icon icon-lg">
+															<span>
+																<i class="fas fa-check-circle text-success "></i>
+															</span>
+														</div>
+														<div class="d-sm-none">
+															<p class="text-success align-items-center">    Successful</p>
+														</div>
+													</div>                                       
+													<div class="col-12 col-xl-7 px-xl-0">
+														<div class="d-none d-sm-block">
+															<p class="text-success">Successful</p>
+															<h6 class="mb-2">Your Subscription has been recieved and it's being processed.</h6>
+														</div>
+														<small> <span class="icon icon-small"><span class="fas fa-info-circle"></span></span> You will recieve an email from us.</small> 
+														
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+                                <!-- End of Form -->
+                                    <!-- End of Form -->
+                                
+                            </form>
+						</div>
+					</div>
+                </div>
+            </div>
+        </section>
+    </main>
+	
+		<!-- Core -->
+		<script src="{% static 'ffs/vendor/popper.js/dist/umd/popper.min.js' %}"></script>
+		<script src="{% static 'ffs/vendor/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+
+		<!-- Vendor JS -->
+		<script src="{% static 'ffs/vendor/onscreen/dist/on-screen.umd.min.js' %}"></script>
+
+		<!-- Slider -->
+		<script src="{% static 'ffs/vendor/nouislider/distribute/nouislider.min.js' %}"></script>
+
+		<!-- Jarallax -->
+		<script src="{% static 'ffs/vendor/jarallax/dist/jarallax.min.js' %}"></script>
+
+		<!-- Smooth scroll -->
+		<script src="{% static 'ffs/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js' %}"></script>
+
+		<!-- Count up -->
+		<script src="{% static 'ffs/vendor/countup.js/dist/countUp.umd.js' %}"></script>
+
+		<!-- Notyf -->
+		<script src="{% static 'ffs/vendor/notyf/notyf.min.js' %}"></script>
+
+		<!-- Charts -->
+		<script src="{% static 'ffs/vendor/chartist/dist/chartist.min.js' %}"></script>
+		<script src="{% static 'ffs/vendor/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js' %}"></script>
+
+		<!-- Datepicker -->
+		<script src="{% static 'ffs/vendor/vanillajs-datepicker/dist/js/datepicker.min.js' %}"></script>
+
+		<!-- Simplebar -->
+		<script src="{% static 'ffs/vendor/simplebar/dist/simplebar.min.js' %}"></script>
+
+		<!-- Github buttons -->
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+		<!-- Volt JS -->
+		<script src="{% static 'ffs/assets/js/volt.js' %}"></script>
+
+	</body>
+
+</html>
+
+
+{% endblock %}

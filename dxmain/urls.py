@@ -23,6 +23,7 @@ urlpatterns = [
     path('', views.home, name="home"),
     path('services/', views.services, name="services"),
     path('contact/', views.contact, name="contact"),
-    path('investment/', views.investment, name="investment"),
+    path('subscribe/', views.subscribe, name="subscribe"),
     path('success/', views.success, name="success"),
+    path('success1/', views.success1, name="success1"),
 ]

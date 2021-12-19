@@ -95,7 +95,8 @@
   
 	<section class="section video">
 		<div class="container">
-			<div style="height:560px; background-color: #1D2330; overflow:hidden; box-sizing: border-box; border: 1px solid #282E3B; border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #262B38;padding:1px;padding: 0px; margin: 0px; width: 100%;"><div style="height:540px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=chart&theme=dark&coin_id=859&pref_coin_id=1505" width="100%" height="536px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;line-height:14px;"></iframe></div><div style="color: #626B7F; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;"><a href="https://coinlib.io" target="_blank" style="font-weight: 500; color: #626B7F; text-decoration:none; font-size:11px">Cryptocurrency Prices</a>&nbsp;by Coinlib</div></div>
+			<div data-background-color="#000000" data-currency="usd" data-coin-id="bitcoin" data-locale="en" data-height="300" data-width="" class="coingecko-coin-price-chart-widget"></div>
+			<script src="https://widgets.coingecko.com/div/coingecko-coin-price-chart-widget-div.js"></script>
 		</div>
 	</section>
 
@@ -146,7 +147,24 @@
   
   <section class="section video">
 		<div class="container">
-			<div style="height:433px; background-color: #1D2330; overflow:hidden; box-sizing: border-box; border: 1px solid #282E3B; border-radius: 4px; text-align: right; line-height:14px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #262B38; padding: 0px; margin: 0px; width: 100%;"><div style="height:413px; padding:0px; margin:0px; width: 100%;"><iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=dark&cnt=6&pref_coin_id=1505&graph=yes" width="100%" height="409px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe></div><div style="color: #626B7F; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;"><a href="https://coinlib.io" target="_blank" style="font-weight: 500; color: #626B7F; text-decoration:none; font-size:11px">Cryptocurrency Prices</a>&nbsp;by Coinlib</div></div>
+			<!-- TradingView Widget BEGIN -->
+			<div class="tradingview-widget-container">
+			  <div class="tradingview-widget-container__widget"></div>
+			  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"><span class="blue-text">Cryptocurrency Markets</span></a> by TradingView</div>
+			  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+			  {
+			  "width": "100%",
+			  "height": "100%",
+			  "defaultColumn": "overview",
+			  "screener_type": "crypto_mkt",
+			  "displayCurrency": "USD",
+			  "colorTheme": "dark",
+			  "locale": "en",
+			  "isTransparent": true
+			}
+			  </script>
+			</div>
+			<!-- TradingView Widget END -->
 		</div>
 	</section>
 
@@ -281,7 +299,7 @@
 							<i class="fa fa-bitcoin" style="background-color: #cd7f32; border-radius: 50%; border: 10px outset #cd7f32; color: #fff;"></i>
 						</div>
 						<div class="text-button-pay">
-							<a href="#">Subscribe <i class="fa fa-angle-double-right"></i></a>
+							<a href="{% url 'subscribe' %}">Subscribe <i class="fa fa-angle-double-right"></i></a>
 						</div>
 					</div>
 				</div>
@@ -296,7 +314,7 @@
 					<i class="fa fa-bitcoin" style="background-color: #c0c0c0; border-radius: 50%; border: 10px outset #c0c0c0; color: #fff;"></i>
 				  </div>
 				  <div class="text-button-free">
-					<a href="#">Subscribe <i class="fa fa-angle-double-right"></i></a>
+					<a href="{% url 'subscribe' %}">Subscribe <i class="fa fa-angle-double-right"></i></a>
 				  </div>
 				</div>
 			  </div>
@@ -311,7 +329,7 @@
 					<i class="fa fa-bitcoin" style="background-color: #ffd700; border-radius: 50%; border: 10px outset #ffd700; color: #fff;"></i>
 				  </div>
 				  <div class="text-button-pay">
-					<a href="#">Subscribe <i class="fa fa-angle-double-right"></i></a>
+					<a href="{% url 'subscribe' %}">Subscribe <i class="fa fa-angle-double-right"></i></a>
 				  </div>
 				</div>
 			  </div>
@@ -326,7 +344,7 @@
 						<i class="fa fa-bitcoin" style="background-color: #b9f2ff; border-radius: 50%; border: 10px outset #b9f2ff; color: #fff;"></i>
 					</div>
 					<div class="text-button-free">
-						<a href="#">Subscribe <i class="fa fa-angle-double-right"></i></a>
+						<a href="{% url 'subscribe' %}">Subscribe <i class="fa fa-angle-double-right"></i></a>
 					</div>
 				</div>
 			</div>
@@ -341,7 +359,7 @@
 						<i class="fa fa-bitcoin" style="background-color: #50c878; border-radius: 50%; border: 10px outset #50c878; color: #fff;"></i>
 					</div>
 					<div class="text-button-pay">
-						<a href="#">Subscribe <i class="fa fa-angle-double-right"></i></a>
+						<a href="{% url 'subscribe' %}">Subscribe <i class="fa fa-angle-double-right"></i></a>
 					</div>
 				</div>
 			</div>
@@ -360,7 +378,7 @@
             <h4>We Are a Very <em>Trusted Brand</em></h4>
             <p>If you had invested $10,000 in Forex Trading at the start of year, you would have had an approximate profit of $30,000 by August. Don't sleep on this. Forex is here to stay, and those who get in early, make the most profit. The right time is now.
             <br><br>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p>
-            <div class="main-button"><a rel="nofollow" href="" target="_parent">Invest Now</a></div>
+            <div class="main-button"><a rel="nofollow" href="{% url 'subscribe' %}" target="_parent">Invest Now</a></div>
           </div>
         </div>
         <div class="col-md-6">
@@ -406,7 +424,7 @@
                 	
                     Please visit https://templatemo.com/contact page -->
                     
-          <form id="contact" action="" method="post">
+          <form id="contact" action="mailto:someone@example.com"  method="post" enctype="text/plain">
 			{% csrf_token %}
             <div class="row">
               <div class="col-md-6">
